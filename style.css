@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+body{
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width:768px){
+    #bar1, #bar2, #bar3{
+        display: none;
+    }
+
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+
+    .digitalClock h1{
+        display: block;
+    }
+}
+
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
